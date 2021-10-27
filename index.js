@@ -4,19 +4,21 @@ var os = require('os');
 var http = require('http');
 
 app.get('/', function(req, res) {
-    var ajaxReq = http.get('http://localhost:8080/', (ajaxRes) => {
-        var rawData = '';
-        ajaxRes.on('data', (chunk) => { 
-            rawData += chunk; 
-        });
-        ajaxRes.on('end', () => {
-            res.send(`We have a message: ${rawData} on ${os.hostname()}`);
-        });
-        ajaxRes.on('error', (e) => {
-            console.error(`Got error: ${e.message}`);
-        });
+
+    res.send("Hello world!");
+    // var ajaxReq = http.get('http://localhost:8080/', (ajaxRes) => {
+    //     var rawData = '';
+    //     ajaxRes.on('data', (chunk) => { 
+    //         rawData += chunk; 
+    //     });
+    //     ajaxRes.on('end', () => {
+    //         res.send(`We have a message: ${rawData} on ${os.hostname()}`);
+    //     });
+    //     ajaxRes.on('error', (e) => {
+    //         console.error(`Got error: ${e.message}`);
+    //     });
         
-    });
+    // });
     
 });
 
