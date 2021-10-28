@@ -12,5 +12,3 @@ SyslogIdentifier=node-client-1
 
 [Install]
 WantedBy=multi-user.target
-
-Info about extension here: https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-linux
