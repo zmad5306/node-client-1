@@ -3,7 +3,7 @@ Description="Node Client 1"
 
 [Service]
 ExecStart=/usr/bin/node index.js
-WorkingDirectory=/home/azureuser/Repos/node-client-1/
+WorkingDirectory=/var/lib/waagent/custom-script/download/0/node-client-1/
 Restart=always
 RestartSec=10
 StandardOutput=syslog
